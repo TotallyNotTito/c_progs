@@ -14,8 +14,8 @@ main(int argc, char * argv[])
   fahr = atof(argv[1]);
 
   while (fahr < max) {
-    cels = (5.0/9.0) * fahr;
-    printf(":\t%f\t%f\n", fahr, cels);
+    cels = ((5.0/9.0) * fahr) - 32.0;
+    printf("%3.1f%6.1f\n", fahr, cels);
     fahr = fahr + step;
   } 
 
